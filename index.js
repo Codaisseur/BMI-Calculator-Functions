@@ -30,6 +30,10 @@ function calculateDietWeeks(weightToLose) {
   return Math.abs(weightToLose / 0.5);
 }
 
+function calculateDietCalories() {
+  console.log("function called?");
+}
+
 function bmiCalculator() {
   const weightInKg = parseInt(process.argv[2]);
   const heightInM = parseFloat(process.argv[3]);
@@ -43,18 +47,19 @@ function bmiCalculator() {
   const dailyCalories = calculateDailyCalories(BMR, dailyExercise);
   const weightToLoseKg = weightInKg - idealWeightKg;
   const dietWeeks = calculateDietWeeks(weightToLoseKg);
+  calculateDietCalories();
 
-  console.log("WEIGHT: ", weightInKg);
-  console.log("HEIGHT: ", heightInM);
-  console.log("AGE: ", age);
-  console.log("DAILY EXERCISE: ", dailyExercise);
-  console.log("GENDER: ", gender);
-  console.log("BMI: ", BMI);
-  console.log("IDEAL WEIGHT", idealWeightKg);
-  console.log("BMR: ", BMR);
-  console.log("DAILYCALORIES:", dailyCalories);
-  console.log("WEIGHT TO LOSE", weightToLoseKg);
-  console.log("DIETWEEKS", dietWeeks);
+  //   console.log("WEIGHT: ", weightInKg);
+  //   console.log("HEIGHT: ", heightInM);
+  //   console.log("AGE: ", age);
+  //   console.log("DAILY EXERCISE: ", dailyExercise);
+  //   console.log("GENDER: ", gender);
+  //   console.log("BMI: ", BMI);
+  //   console.log("IDEAL WEIGHT", idealWeightKg);
+  //   console.log("BMR: ", BMR);
+  //   console.log("DAILYCALORIES:", dailyCalories);
+  //   console.log("WEIGHT TO LOSE", weightToLoseKg);
+  //   console.log("DIETWEEKS", dietWeeks);
 }
 
 bmiCalculator();
