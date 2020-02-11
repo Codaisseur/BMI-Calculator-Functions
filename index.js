@@ -36,6 +36,25 @@ function calculateDietCalories(weightToLose, caloriesUsedDaily) {
 
 function validateNumberOfInputs(argv) {
   console.log("input ok?", argv);
+  if (argv.length !== 7) {
+    console.log(`
+      You gave ${argv.length - 2} arguments(s) to the program
+  
+      Please provide 5 arguments for
+      
+      weight (kg), 
+      height (m), 
+      age (years), 
+      wether you exercise daily (yes or no)
+      and your gender (m or f)
+      
+      Example:
+  
+      $ node index.js 82 1.79 32 yes m
+    `);
+
+    process.exit();
+  }
 }
 
 function bmiCalculator() {
@@ -45,7 +64,6 @@ function bmiCalculator() {
     82,
     1.79,
     32,
-    "yes",
     "m"
   ]);
 
