@@ -1,5 +1,7 @@
 function calculateBMI(weight, height) {
   console.log("input to function ok?", weight, height);
+  const BMI = weight / (height * height);
+  console.log("BMI:", BMI);
 }
 
 function bmiCalculator() {
