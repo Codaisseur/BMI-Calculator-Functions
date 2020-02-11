@@ -55,7 +55,7 @@ function bmiCalculator() {
   const dailyCalories = calculateDailyCalories(BMR, dailyExercise);
   const weightToLoseKg = weightInKg - idealWeightKg;
   const dietWeeks = calculateDietWeeks(weightToLoseKg);
-  const dietCalories = calculateDietCalories(-9.5, 2300);
+  const dietCalories = calculateDietCalories(weightToLoseKg, dailyCalories);
 
   console.log("DIET CALORIES:", dietCalories);
   //   console.log("WEIGHT: ", weightInKg);
