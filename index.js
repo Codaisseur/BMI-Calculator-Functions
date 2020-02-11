@@ -20,8 +20,8 @@ function calculateBMR(weight, height, ageOfUser, genderOfUser) {
   return BMR;
 }
 
-function calculateDailyCalories() {
-  console.log("function called?");
+function calculateDailyCalories(basalMetabolicRate, doesUserExercise) {
+  console.log("input ok?", basalMetabolicRate, doesUserExercise);
 }
 
 function bmiCalculator() {
@@ -34,7 +34,7 @@ function bmiCalculator() {
   const BMI = calculateBMI(weightInKg, heightInM);
   const idealWeight = calculateIdealWeight(heightInM);
   const BMR = calculateBMR(weightInKg, heightInM, age, gender);
-  calculateDailyCalories();
+  calculateDailyCalories(1770, "yes");
 
   //   console.log("WEIGHT: ", weightInKg);
   //   console.log("HEIGHT: ", heightInM);
