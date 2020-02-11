@@ -30,6 +30,7 @@ function calculateDietWeeks(weightToLose) {
   console.log("input correct?", weightToLose);
   const weeks = Math.abs(weightToLose / 0.5);
   console.log(weeks);
+  return weeks;
 }
 
 function bmiCalculator() {
@@ -44,7 +45,8 @@ function bmiCalculator() {
   const BMR = calculateBMR(weightInKg, heightInM, age, gender);
   const dailyCalories = calculateDailyCalories(BMR, dailyExercise);
   const weightToLoseKg = weightInKg - idealWeightKg;
-  calculateDietWeeks(-9.7);
+  const dietWeeks = calculateDietWeeks(-9.7);
+  console.log("DIETWEEKS:", dietWeeks);
 
   //   console.log("WEIGHT: ", weightInKg);
   //   console.log("HEIGHT: ", heightInM);
