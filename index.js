@@ -34,12 +34,20 @@ function calculateDietCalories(weightToLose, caloriesUsedDaily) {
   return weightToLose > 0 ? caloriesUsedDaily - 500 : caloriesUsedDaily + 500;
 }
 
-function validateNumberOfInputs() {
-  console.log("called?");
+function validateNumberOfInputs(argv) {
+  console.log("input ok?", argv);
 }
 
 function bmiCalculator() {
-  validateNumberOfInputs();
+  validateNumberOfInputs([
+    "/path/to/node",
+    "folder/myFile.js",
+    82,
+    1.79,
+    32,
+    "yes",
+    "m"
+  ]);
 
   const weightInKg = parseInt(process.argv[2]);
   const heightInM = parseFloat(process.argv[3]);
