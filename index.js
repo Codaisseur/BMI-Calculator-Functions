@@ -54,6 +54,7 @@ function bmiCalculator() {
   console.log("BMR: ", BMR);
   console.log("DAILYCALORIES:", dailyCalories);
   console.log("WEIGHT TO LOSE", weightToLoseKg);
+  console.log("DIETWEEKS", dietWeeks);
 }
 
 bmiCalculator();
