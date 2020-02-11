@@ -4,6 +4,8 @@ function calculateBMI(weight, height) {
 
 function calculateIdealWeight(height) {
   console.log("input correct?", height);
+  const idealWeight = 22.5 * height * height;
+  console.log(idealWeight);
 }
 
 function calculateBMR(weight, height, ageOfUser, genderOfUser) {
