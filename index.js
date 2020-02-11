@@ -124,6 +124,10 @@ function validateGender(genderOfUser) {
   }
 }
 
+function formatOutput(userObject) {
+  console.log(userObject);
+}
+
 function bmiCalculator() {
   validateNumberOfInputs(process.argv);
 
@@ -159,7 +163,7 @@ function bmiCalculator() {
     dietCalories: dietCalories
   };
 
-  console.log(user);
+  const output = formatOutput(user);
 }
 
 bmiCalculator();
