@@ -50,17 +50,17 @@ function bmiCalculator() {
   const dietCalories = calculateDietCalories(weightToLoseKg, dailyCalories);
 
   console.log("DIET CALORIES:", dietCalories);
-  //   console.log("WEIGHT: ", weightInKg);
-  //   console.log("HEIGHT: ", heightInM);
-  //   console.log("AGE: ", age);
-  //   console.log("DAILY EXERCISE: ", dailyExercise);
-  //   console.log("GENDER: ", gender);
-  //   console.log("BMI: ", BMI);
-  //   console.log("IDEAL WEIGHT", idealWeightKg);
-  //   console.log("BMR: ", BMR);
-  //   console.log("DAILYCALORIES:", dailyCalories);
-  //   console.log("WEIGHT TO LOSE", weightToLoseKg);
-  //   console.log("DIETWEEKS", dietWeeks);
+  console.log("WEIGHT: ", weightInKg);
+  console.log("HEIGHT: ", heightInM);
+  console.log("AGE: ", age);
+  console.log("DAILY EXERCISE: ", dailyExercise);
+  console.log("GENDER: ", gender);
+  console.log("BMI: ", BMI);
+  console.log("IDEAL WEIGHT", idealWeightKg);
+  console.log("BMR: ", BMR);
+  console.log("DAILYCALORIES:", dailyCalories);
+  console.log("WEIGHT TO LOSE", weightToLoseKg);
+  console.log("DIETWEEKS", dietWeeks);
 }
 
 bmiCalculator();
