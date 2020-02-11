@@ -35,7 +35,6 @@ function calculateDietCalories(weightToLose, caloriesUsedDaily) {
 }
 
 function validateNumberOfInputs(argv) {
-  console.log("input ok?", argv);
   if (argv.length !== 7) {
     console.log(`
       You gave ${argv.length - 2} arguments(s) to the program
@@ -58,14 +57,7 @@ function validateNumberOfInputs(argv) {
 }
 
 function bmiCalculator() {
-  validateNumberOfInputs([
-    "/path/to/node",
-    "folder/myFile.js",
-    82,
-    1.79,
-    32,
-    "m"
-  ]);
+  validateNumberOfInputs(process.argv);
 
   const weightInKg = parseInt(process.argv[2]);
   const heightInM = parseFloat(process.argv[3]);
