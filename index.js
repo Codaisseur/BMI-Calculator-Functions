@@ -1,1 +1,5 @@
-console.log("hi");
+function bmiCalculator() {
+  console.log("testing main function");
+}
+
+bmiCalculator();
