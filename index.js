@@ -144,6 +144,22 @@ function bmiCalculator() {
   const weightToLoseKg = weightInKg - idealWeightKg;
   const dietWeeks = calculateDietWeeks(weightToLoseKg);
   const dietCalories = calculateDietCalories(weightToLoseKg, dailyCalories);
+
+  const user = {
+    weightInKg: weightToLoseKg,
+    heightInM: heightInM,
+    age: age,
+    dailyExercise: dailyExercise,
+    gender: gender,
+    BMI: BMI,
+    idealWeightKg: idealWeightKg,
+    dailyCalories: dailyCalories,
+    weightToLoseKg: weightToLoseKg,
+    dietWeeks: dietWeeks,
+    dietCalories: dietCalories
+  };
+
+  console.log(user);
 }
 
 bmiCalculator();
