@@ -39,7 +39,7 @@ function calculateDietCalories(weightToLose, caloriesUsedDaily) {
     dietCalories = caloriesUsedDaily + 500;
   }
 
-  console.log(dietCalories);
+  return dietCalories;
 }
 
 function bmiCalculator() {
@@ -55,8 +55,9 @@ function bmiCalculator() {
   const dailyCalories = calculateDailyCalories(BMR, dailyExercise);
   const weightToLoseKg = weightInKg - idealWeightKg;
   const dietWeeks = calculateDietWeeks(weightToLoseKg);
-  calculateDietCalories(-9.5, 2300);
+  const dietCalories = calculateDietCalories(-9.5, 2300);
 
+  console.log("DIET CALORIES:", dietCalories);
   //   console.log("WEIGHT: ", weightInKg);
   //   console.log("HEIGHT: ", heightInM);
   //   console.log("AGE: ", age);
