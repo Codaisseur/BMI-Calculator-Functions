@@ -6,6 +6,7 @@ function calculateIdealWeight(height) {
   console.log("input correct?", height);
   const idealWeight = 22.5 * height * height;
   console.log(idealWeight);
+  return idealWeight;
 }
 
 function calculateBMR(weight, height, ageOfUser, genderOfUser) {
@@ -30,7 +31,8 @@ function bmiCalculator() {
   const gender = process.argv[6];
 
   const BMI = calculateBMI(weightInKg, heightInM);
-  calculateIdealWeight(1.79);
+  const idealWeight = calculateIdealWeight(1.79);
+  console.log("Value in main function?", idealWeight);
   const BMR = calculateBMR(weightInKg, heightInM, age, gender);
 
   //   console.log("WEIGHT: ", weightInKg);
