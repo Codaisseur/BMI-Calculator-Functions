@@ -1,8 +1,7 @@
 function calculateBMI(weight, height) {
-  console.log("input to function ok?", weight, height);
-  const BMI = weight / (height * height);
-  console.log("BMI:", BMI);
-  return BMI;
+  // we can just return the expressions
+  // That way we don't need another variable
+  return weight / (height * height);
 }
 
 function bmiCalculator() {
@@ -13,13 +12,13 @@ function bmiCalculator() {
   const gender = process.argv[6];
 
   const BMI = calculateBMI(weightInKg, heightInM);
-  console.log("BMI in main:", BMI);
 
   console.log("WEIGHT: ", weightInKg);
   console.log("HEIGHT: ", heightInM);
-  //   console.log("AGE: ", age);
-  //   console.log("DAILY EXERCISE: ", dailyExercise);
-  //   console.log("GENDER: ", gender);
+  console.log("AGE: ", age);
+  console.log("DAILY EXERCISE: ", dailyExercise);
+  console.log("GENDER: ", gender);
+  console.log("BMI: ", BMI);
 }
 
 bmiCalculator();
