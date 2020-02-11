@@ -31,7 +31,7 @@ function bmiCalculator() {
   const gender = process.argv[6];
 
   const BMI = calculateBMI(weightInKg, heightInM);
-  const idealWeight = calculateIdealWeight(1.79);
+  const idealWeight = calculateIdealWeight(heightInM);
   console.log("Value in main function?", idealWeight);
   const BMR = calculateBMR(weightInKg, heightInM, age, gender);
 
