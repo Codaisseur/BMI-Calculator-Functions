@@ -22,6 +22,15 @@ function calculateBMR(weight, height, ageOfUser, genderOfUser) {
 
 function calculateDailyCalories(basalMetabolicRate, doesUserExercise) {
   console.log("input ok?", basalMetabolicRate, doesUserExercise);
+  let dailyCalories;
+
+  if (doesUserExercise === "yes") {
+    dailyCalories = basalMetabolicRate * 1.6;
+  } else {
+    dailyCalories = basalMetabolicRate * 1.4;
+  }
+
+  console.log(dailyCalories);
 }
 
 function bmiCalculator() {
