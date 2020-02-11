@@ -25,7 +25,7 @@ function bmiCalculator() {
   const gender = process.argv[6];
 
   const BMI = calculateBMI(weightInKg, heightInM);
-  const BMR = calculateBMR(82, 1.79, 32, "m");
+  const BMR = calculateBMR(weightInKg, heightInM, age, gender);
   console.log("BMR in main function", BMR);
 
   //   Comment out other logs for now
