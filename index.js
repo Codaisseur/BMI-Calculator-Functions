@@ -4,6 +4,17 @@ function calculateBMI(weight, height) {
 
 function calculateBMR(weight, height, ageOfUser, genderOfUser) {
   console.log("input to function ok?", weight, height, ageOfUser, genderOfUser);
+  var heightInCm = height * 100;
+
+  let BMR;
+
+  if (genderOfUser === "m") {
+    BMR = 10 * weight + 6.25 * heightInCm - 5 * ageOfUser + 50;
+  } else {
+    BMR = 10 * weight + 6.25 * heightInCm - 5 * ageOfUser - 150;
+  }
+
+  console.log("BMR inside function", BMR);
 }
 
 function bmiCalculator() {
