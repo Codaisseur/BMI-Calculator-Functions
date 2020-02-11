@@ -32,6 +32,14 @@ function calculateDietWeeks(weightToLose) {
 
 function calculateDietCalories(weightToLose, caloriesUsedDaily) {
   console.log("input ok?", weightToLose, caloriesUsedDaily);
+  let dietCalories;
+  if (weightToLose > 0) {
+    dietCalories = caloriesUsedDaily - 500;
+  } else {
+    dietCalories = caloriesUsedDaily + 500;
+  }
+
+  console.log(dietCalories);
 }
 
 function bmiCalculator() {
