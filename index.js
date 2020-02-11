@@ -28,6 +28,8 @@ function calculateDailyCalories(basalMetabolicRate, doesUserExercise) {
 
 function calculateDietWeeks(weightToLose) {
   console.log("input correct?", weightToLose);
+  const weeks = Math.abs(weightToLose / 0.5);
+  console.log(weeks);
 }
 
 function bmiCalculator() {
