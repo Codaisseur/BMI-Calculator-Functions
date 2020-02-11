@@ -12,12 +12,11 @@ function bmiCalculator() {
   const dailyExercise = process.argv[5];
   const gender = process.argv[6];
 
-  const BMI = calculateBMI(82, 1.79);
+  const BMI = calculateBMI(weightInKg, heightInM);
   console.log("BMI in main:", BMI);
 
-  //   Comment out input checks for now
-  //   console.log("WEIGHT: ", weightInKg);
-  //   console.log("HEIGHT: ", heightInM);
+  console.log("WEIGHT: ", weightInKg);
+  console.log("HEIGHT: ", heightInM);
   //   console.log("AGE: ", age);
   //   console.log("DAILY EXERCISE: ", dailyExercise);
   //   console.log("GENDER: ", gender);
