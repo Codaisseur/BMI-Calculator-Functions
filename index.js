@@ -98,6 +98,20 @@ function validateWeightHeightAndAge(weight, height, ageOfUser, argv) {
   }
 }
 
+function validateDailyExercise(doesUserExercise) {
+  if (doesUserExercise !== "yes" && doesUserExercise !== "no") {
+    console.log(`
+      Please specify wether you exercise daily with yes or no
+
+      You entered: ${doesUserExercise}
+
+      (Don't worry, we won't judge you if you enter no)
+  `);
+
+    process.exit();
+  }
+}
+
 function bmiCalculator() {
   validateNumberOfInputs(process.argv);
 
@@ -108,6 +122,7 @@ function bmiCalculator() {
   const gender = process.argv[6];
 
   validateWeightHeightAndAge(weightInKg, heightInM, age, process.argv);
+  validateDailyExercise(dailyExercise);
 
   const BMI = calculateBMI(weightInKg, heightInM);
   const idealWeightKg = calculateIdealWeight(heightInM);
