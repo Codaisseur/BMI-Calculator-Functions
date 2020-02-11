@@ -2,6 +2,7 @@ function calculateBMI(weight, height) {
   console.log("input to function ok?", weight, height);
   const BMI = weight / (height * height);
   console.log("BMI:", BMI);
+  return BMI;
 }
 
 function bmiCalculator() {
@@ -11,7 +12,8 @@ function bmiCalculator() {
   const dailyExercise = process.argv[5];
   const gender = process.argv[6];
 
-  calculateBMI(82, 1.79);
+  const BMI = calculateBMI(82, 1.79);
+  console.log("BMI in main:", BMI);
 
   //   Comment out input checks for now
   //   console.log("WEIGHT: ", weightInKg);
