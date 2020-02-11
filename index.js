@@ -43,7 +43,7 @@ function bmiCalculator() {
   const BMI = calculateBMI(weightInKg, heightInM);
   const idealWeight = calculateIdealWeight(heightInM);
   const BMR = calculateBMR(weightInKg, heightInM, age, gender);
-  const dailyCalories = calculateDailyCalories(1770, "yes");
+  const dailyCalories = calculateDailyCalories(BMR, dailyExercise);
 
   console.log("DAILYCALORIES:", dailyCalories);
 
